@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- css Main Style Sheet -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <!-- css font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- free Code Camp Project __*2*-->
+
+    <div class="v-height">
+
+                <video class="video-bg" autoplay muted loop src="./video/Typeing - Copy.mov">
+                    <source type="video/quicktime">
+                    Sorry!!Your Browser Doesn't Support HTML5
+                </video>               
+                <div class="content">
+                    <div id="title">Survey Form</div>
+                    <p id="description">Thank you for taking the time to help me Improve my Plateform </p>
+                    <div class="form_content">
+                        <form action="get" id="survey-form">
+                                <label id="name-label" for="name">Name</label>
+                                <input placeholder="Enter Youer Name" type="text" id="name" name="name"/>
+                                <label for="email" id="email-label">Email</label>
+                                <input placeholder="Enter Your Email" type="email" id="email" name="email"/>
+                                <label for="number" id="number-label">Age (optional)</label>
+                                <input placeholder="Age" type="number" min="0" max="10" name="number" id="number"/>
+                                <p class="question">Which option best describes your current role?</p>
+                                <select name="dropdown" id="dropdown">      
+                                    <option selected disabled >Select current Role</option>
+                                    <option value="2">Student</option>
+                                    <option value="3">Full Time Job</option>
+                                    <option value="3">Full Time Learner</option>
+                                    <option value="3">Full Time Prefer Not To Say</option>
+                                    <option value="3">Other</option>
+                                </select>
+                                <p>Did you Like This Page?</p>
+                                <div>
+                                    <input type="radio" id="sure" name="LikeingThePage"/>
+                                    <label  for="sure" >Definitely</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="not so sure" name="LikeingThePage"/>
+                                    <label  for="not so sure" >Maybe</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="not sure" name="LikeingThePage"/>
+                                    <label  for="not sure">Not sure</label>
+                                </div>
+                                <p class="question">What would you like to see improved? (Check all that apply)</p>
+                                <div>
+                                    <input type="checkbox" value="Front-end Projects"id="Front-end Projects"name="improvements"/>
+                                    <label for="Front-end Projects" >Front-end Projects</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" value="" id="Challenges" name="improvements"/>
+                                    <label for="Challenges">Challenges</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" value="" id="Open Source Community" name="improvements"/>
+                                    <label for="Open Source Community">Open Source Community</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" value="" id="Videos" name="improvements"/>
+                                    <label for="Videos">Videos</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" value="" id="Wiki" name="improvements"/>
+                                    <label for="Wiki">Wiki</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" value="" id="Forum" name="improvements"/>
+                                    <label for="Forum">Forum</label>
+                                </div>
+                                <p class="question p-d">Any comments or suggestions?</p>
+                                <textarea class="text-place" placeholder="Enter Your Comment here..."></textarea>
+                                <button id="submit">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html> 

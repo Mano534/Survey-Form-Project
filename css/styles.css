@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+}
+
+.container{
+     margin: 5% auto;
+     width: 60%;
+}
+.video-bg{
+    /* width:50%;
+    height:50%; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+.v-height{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(26, 0, 156,0.3);
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 50px;
+}
+.content{
+
+    min-width: 60%;
+    line-height: 2.5rem;
+}
+#title{
+    text-align: center;
+    font-size: 3rem;
+    padding: 20;
+}
+#survey-form{
+    border-radius: 10px;
+    background: rgba(25, 25, 26, 0.7);    
+    padding: 40px;
+}
+#survey-form input{
+    color: rgba(25, 25, 26, 0.7); 
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#survey-form input:focus{
+    border: 3px solid rgb(84, 147, 255);
+    transition-property:border;
+    transition-duration: 50ms; 
+    
+}
+input[type="text"],input[type="email"],input[type="number"],select{
+    width:100%;
+    padding:.5rem;
+    display:block;
+}
+label  ,label {
+    cursor: pointer;
+}
+
+option , select{
+    color: rgba(25, 25, 26, 0.7); 
+    font-size: 1rem;
+    border-radius: 5px;
+    border:none!important;
+    outline:none!important;
+}
+
+.question{
+    font-size:1.5rem;
+    padding-top:.5rem ;
+
+}
+.p-d{
+    padding-bottom: 5px;
+}
+.text-place{
+    width: 100% ;
+    min-height: 10vw;
+    color: rgba(25, 25, 26, 0.7); 
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+button#submit{
+    min-width: 100%; 
+    background: rgb(4, 212, 4);
+    padding: 10px 0px;
+    text-align: center;
+    outline: none;
+    border: none;
+    font-size:1.5rem;
+    cursor: pointer;
+}
+@media(max-width: 567){
+    html{
+        font-size: 7px;
+    }
+}
